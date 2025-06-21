@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -8,6 +12,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   overscroll-behavior: none;
+  position:absolute;
 }
 html, body {
   height: 100%;
