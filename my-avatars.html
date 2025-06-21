@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvatarVerse - My Avatars</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <header class="site-header">
+    <div class="logo"><img src="logo.png" alt="AvatarVerse logo" />AvatarVerse</div>
+      <button class="hamburger" id="mobile-nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/generate.html">Generate</a>
+        <a href="/community.html">Community</a>
+        <a href="/my-avatars.html">My Avatars</a>
+        <a href="/challenges.html">Challenges</a>
+      </nav>
+    </header>
+    <main class="my-avatars-main">
+      <h2>My Avatars</h2>
+      <div id="my-avatars-empty" style="display:none;text-align:center;margin:2.5rem 0;">
+        <img src="logo.png" alt="No avatars yet" style="width:64px;height:64px;opacity:0.5;margin-bottom:1rem;" />
+        <div style="color:#FFD700;font-size:1.15rem;font-weight:600;">No avatars yet! Go generate one! 🎨</div>
+      </div>
+      <button id="download-all-btn" class="cta-btn" style="display:none;margin:0 auto 1.5rem auto;">Download All</button>
+      <div id="my-avatars-grid" class="community-grid"></div>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <div class="footer-logo-img">
+          <img src="logo.png" alt="AvatarVerse logo" style="width:40px; height:auto; border-radius:50%; display:block;" />
+        </div>
+        <div class="footer-logo-text">
+          AvatarVerse<br><span>AVATAR PLATFORM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">
+      
+    </div>
+    <div class="footer-right">
+      <div class="footer-copyright">&copy; AvatarVerse 2025</div>
+      <div class="footer-multiavatar">
+        <a href="https://multiavatar.com" target="_blank" rel="noopener">Avatars by Multiavatar</a>
+      </div>
+    </div>
+  </footer>
+  <script src="my-avatars.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AvatarVerse - Generate Avatar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="animated-bg">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+  </div>
+  <header class="site-header">
+    <div class="logo"><img src="logo.png" alt="AvatarVerse logo" />AvatarVerse</div>
+
+    <button class="hamburger" id="mobile-nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/generate.html">Generate</a>
+      <a href="/community.html">Community</a>
+      <a href="/my-avatars.html">My Avatars</a>
+      <a href="/challenges.html">Challenges</a>
+    </nav>
+  </header>
+  <main class="generator-main">
+    <span class="generator-emoji">🧑‍🎨</span>
+    <h2>Avatar Generator</h2>
+    <div class="generator-tip">Tip: Try a random word or your nickname for a unique avatar! 🎲</div>
+    <form id="avatar-form">
+      <div class="form-group">
+        <label for="seed">Seed Text</label>
+        <div class="seed-row">
+          <input type="text" id="seed" name="seed" placeholder="Enter a seed (e.g. username)" required>
+          <button type="button" id="randomize-seed" class="randomize-btn" aria-label="Randomize seed">🎲</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Background Color</label>
+        <div class="color-buttons">
+          <button type="button" class="color-btn" data-color="#23272A">01</button>
+          <button type="button" class="color-btn" data-color="#23272A">02</button>
+          <button type="button" class="color-btn" data-color="#23272A">03</button>
+          <button type="button" class="color-btn" data-color="#23272A">04</button>
+          <button type="button" class="color-btn" data-color="#23272A">05</button>
+          <button type="button" class="color-btn" data-color="#23272A">06</button>
+          <button type="button" class="color-btn" data-color="#23272A">07</button>
+          <button type="button" class="color-btn" data-color="#23272A">08</button>
+          <button type="button" class="color-btn" data-color="#23272A">09</button>
+          <button type="button" class="color-btn" data-color="#23272A">10</button>
+          <button type="button" class="color-btn" data-color="#23272A">11</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="overlay">Overlay Text</label>
+        <input type="text" id="overlay" name="overlay" maxlength="20" placeholder="e.g. @yourname">
+      </div>
+      <div class="form-group">
+        <label>Theme</label>
+        <div class="theme-options">
+          <label><input type="radio" name="theme" value="A" checked> Theme A</label>
+          <label><input type="radio" name="theme" value="B"> Theme B</label>
+          <label><input type="radio" name="theme" value="C"> Theme C</label>
+        </div>
+      </div>
+    </form>
+    <button id="generate-btn" class="cta-btn" style="display:block;margin:1.5rem auto 0 auto;">Generate</button>
+    <div class="avatar-preview-section">
+      <h3>Live Preview</h3>
+      <div id="avatar-preview" class="avatar-preview"></div>
+    </div>
+    <div class="generator-actions">
+      <button id="download-btn" class="cta-btn">Download PNG</button>
+      <button id="submit-btn" class="cta-btn">Submit to Community Wall</button>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <div class="footer-logo-img">
+          <img src="logo.png" alt="AvatarVerse logo" style="width:40px; height:auto; border-radius:50%; display:block;" />
+
+        </div>
+        <div class="footer-logo-text">
+          AvatarVerse<br><span>AVATAR PLATFORM</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">
+      
+    </div>
+    <div class="footer-right">
+      <div class="footer-copyright">&copy; AvatarVerse 2025</div>
+      <div class="footer-multiavatar">
+        <a href="https://multiavatar.com" target="_blank" rel="noopener">Avatars by Multiavatar</a>
+      </div>
+    </div>
+  </footer>
+  <script src="generator.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 
