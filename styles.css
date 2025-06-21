@@ -1,7 +1,4 @@
 
-*{
-  box-sizing: border-box;
-}
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -333,7 +330,6 @@ nav a:hover {
 }
 @media (max-width: 700px) {
   .footer-links {
-    flex-direction: column;
     gap: 1.2rem;
   }
 }
@@ -440,11 +436,12 @@ nav a:hover {
   .footer-socials {
     justify-content: center;
     width: 100%;
+    margin: 0;
   }
   .footer-links {
-    justify-content: center;
+    justify-content: left;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
   .community-grid {
     grid-template-columns: 1fr;
@@ -732,15 +729,19 @@ nav a:hover {
 }
 /* Generator Page Styles */
 .generator-main {
-  max-width: 540px;
-  margin: 3rem auto 2rem auto;
+  max-width: 800px;
+  width: 800px;
+  display: block;
   background: #23272A;
+  margin: 1rem auto ;
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.5);
   padding: 2.5rem 2rem 2rem 2rem;
   position: relative;
   overflow: visible;
   padding-bottom: 2.2rem;
+  justify-content: center;
+  align-items: center;
 }
 .generator-main::before {
   /* Removed moving background */
